@@ -14,7 +14,6 @@
 	            	<div class="month-cont" v-show="isMonth">
                     	<span 
                     		class="month" 
-                    		v-model="clickMonth"
                     		v-for="months in months"
                     		@click="selectMonth($event)"
                     		>
@@ -24,7 +23,6 @@
                 	<div class="year-cont" v-show="isyear">
                 		<span 
                 			class="years" 
-                			v-model="clickYear"
                 			v-for="years in years" 
                 			@click="selectYear($event)"
                 			>
@@ -45,8 +43,6 @@
 				dateBoxFlag: false,
 				selectDate: '',
 				year: 0,
-				clickMonth:'',
-				clickYear:'',
 				isyear: false,
 				isMonth: true,
 				months:[1,2,3,4,5,6,7,8,9,10,11,12],
